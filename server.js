@@ -30,6 +30,7 @@ router.route('/gets').get(function (req, res) {
     {
         res.status(400).send("No query");
     }
+
     if(Object.keys(req.headers).length === 0)
     {
         res.status(400).send("No headers");
@@ -50,6 +51,7 @@ router.route('/posts').post(function (req, res) {
     {
         res.status(400).send("No query");
     }
+
     if(Object.keys(req.headers).length === 0)
     {
         res.status(400).send("No headers");
@@ -71,6 +73,7 @@ router.route('/puts').put(function (req, res) {
     {
         res.status(400).send("No query");
     }
+
     if(Object.keys(req.headers).length === 0)
     {
         res.status(400).send("No headers");
@@ -92,6 +95,7 @@ router.route('/deletes')
     {
         res.status(400).send("No query");
     }
+
     if(Object.keys(req.headers).length === 0)
     {
         res.status(400).send("No headers");
